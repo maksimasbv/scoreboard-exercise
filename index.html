@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+                <div class="score-board" id="home-score">0</div>
+                <div class="add-points-btns">
+                    <button id="plus-one-btn" onclick="addOneHome()">+1</button>
+                    <button id="plus-two-btn" onclick="addTwoHome()">+2</button>
+                    <button id="plus-three-btn" onclick="addThreeHome()">+3</button>
+                </div>
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <div class="score-board" id="guest-score">0</div>
+                <div class="add-points-btns">
+                    <button id="plus-one-btn" onclick="addOneGuest()">+1</button>
+                    <button id="plus-two-btn" onclick="addTwoGuest()">+2</button>
+                    <button id="plus-three-btn" onclick="addThreeGuest()">+3</button>
+                </div>
+            </div>
+        </div>
+        <div class="section-play-btns">
+            <button class="play-btn" id="start-btn" onclick="startScore()">START THE GAME</button>
+            <button class="play-btn" onclick="finishScore()">FINISH THE GAME</button>
+        </div>
+        <div id="resultMsg"></>
+        <script src="index.js"></script>
+    </body>
+</html>
